@@ -32,6 +32,11 @@ repos:
     -   id: poetry-lock
         args: ["-C", "./src"]
     -   id: poetry-export
-        args: ["-C", "./src", "-f", "requirements.txt", "-o", "./src/requirements.txt", "--without-hashes"]
+        args: [
+          "-C", "./src",
+          "-f", "requirements.txt",
+          "-o", "./src/requirements.txt",
+          "--without-hashes"
+        ]
     -   id: poetry-install
         args: ["-C", "./src"]
